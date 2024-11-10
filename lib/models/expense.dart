@@ -1,11 +1,11 @@
 import 'package:uuid/uuid.dart';
 import 'package:intl/intl.dart';
 
-final formatter = DateFormat.yMd();
+final formatter = DateFormat.yMMMd();
 
 const uuid = Uuid();
 
-enum Category { Laundry, Duvet, Carpet }
+enum Categorry { Laundry, Duvet, Carpet }
 
 enum Handled { Peter, Tee, Ranjoz, Mike, Other }
 
@@ -27,7 +27,7 @@ class Expense {
   final int Amount;
   final String id;
   final DateTime Date;
-  final Category category;
+  final Categorry category;
   // final DateTime DateOut;
   // final Handled delivery;
   // final Handled wash;

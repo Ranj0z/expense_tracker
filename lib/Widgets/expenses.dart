@@ -17,18 +17,21 @@ class _ExpensesState extends State<Expenses> {
         Name: 'Lizar',
         Amount: 350,
         Date: DateTime.now(),
-        category: Category.Laundry,
+        category: Categorry.Laundry,
         Address: 'Takimu 58'),
     Expense(
         Name: 'Ranjoz',
         Amount: 350,
         Date: DateTime.now(),
-        category: Category.Laundry,
+        category: Categorry.Laundry,
         Address: 'Takimu 38'),
   ];
 
   void _openAddLaundryOverlay() {
-    showModalBottomSheet(context: context, builder: (ctx) => NewExpense());
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => NewExpense(),
+    );
   }
 
   @override
